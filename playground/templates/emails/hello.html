@@ -1,0 +1,25 @@
+{% block subject %} This is a long subject{% endblock %} {% block html_body %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Your Email Subject</title>
+  </head>
+  <body>
+    <p>Hello {{ name }},</p>
+
+    <p>This is an example email template created using Django.</p>
+
+    <p>Here's some information:</p>
+    <ul>
+      <li><strong>Name:</strong> {{ name }}</li>
+    </ul>
+
+    <p>Thank you for using our service!</p>
+
+    <p>Sincerely,</p>
+    <p>Your Team</p>
+  </body>
+</html>
+
+{% endblock %}
